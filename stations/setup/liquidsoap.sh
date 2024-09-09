@@ -15,7 +15,7 @@ apt_get_with_lock install -y --no-install-recommends "${PACKAGES[@]}"
 
 # Download and install Liquidsoap
 ARCHITECTURE=$(dpkg --print-architecture | awk -F- '{ print $NF }')
-LIQUIDSOAP_DEB_URL="https://github.com/savonet/liquidsoap-release-assets/releases/download/rolling-release-v2.2.x/liquidsoap-b46726d_2.2.1-ubuntu-jammy-1_${ARCHITECTURE}.deb"
+LIQUIDSOAP_DEB_URL="https://github.com/savonet/liquidsoap/releases/download/v2.2.3/liquidsoap_2.2.3-ubuntu-jammy-1_${ARCHITECTURE}.deb"
 wget -O liquidsoap.deb "$LIQUIDSOAP_DEB_URL"
 dpkg -i liquidsoap.deb
 
