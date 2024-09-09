@@ -22,7 +22,7 @@ make install
 # Do customizations
 CUSTOM_DIR="$WORK_DIR/icecast_customizations"
 mkdir -p "$CUSTOM_DIR"
-curl -fsSL -o "$CUSTOM_DIR/custom-files.tar.gz" https://github.com/AzuraCast/icecast-kh-custom-files/archive/refs/tags/2023-04-23.tar.gz
+curl -fsSL -o "$CUSTOM_DIR/custom-files.tar.gz" https://github.com/AzuraCast/icecast-kh-custom-files/archive/refs/tags/2024-05-24.tar.gz
 tar -xvzf "$CUSTOM_DIR/custom-files.tar.gz" --strip-components=1 -C "$CUSTOM_DIR"
 
 cp -r "$CUSTOM_DIR/web/"* /usr/local/share/icecast/web/
