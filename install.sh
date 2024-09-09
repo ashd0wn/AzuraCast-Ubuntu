@@ -38,7 +38,7 @@ generate_azuracast_password=$(
 installerHome=$PWD
 
 # Misc Options
-set_php_version="8.3"
+set_php_version="8.2"
 
 # AzuraCast Database cant be custom.
 # Migrate function does actually not respect different database names. (Last checked in 0.17.6)
