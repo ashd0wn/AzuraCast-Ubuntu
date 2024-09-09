@@ -12,7 +12,7 @@ if [ "$azuracast_git_version" = "stable" ] || [ "$azuracast_git_version" = "roll
 else
     apt_get_with_lock install software-properties-common gnupg2 -y
     apt-key adv --fetch-keys 'https://mariadb.org/mariadb_release_signing_key.asc'
-    add-apt-repository -y 'deb [arch=amd64] http://mariadb.mirror.globo.tech/repo/10.8/ubuntu jammy main'
+    add-apt-repository -y 'deb [arch=amd64] http://mariadb.mirror.globo.tech/repo/11.5/ubuntu jammy main'
     apt_get_with_lock update -y
 fi
 
