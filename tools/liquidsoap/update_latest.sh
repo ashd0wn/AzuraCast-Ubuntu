@@ -24,3 +24,4 @@ rm liquidsoap_2.2.3-ubuntu-jammy-1_amd64.deb
 
 # Start anything
 supervisorctl start all || :
+
