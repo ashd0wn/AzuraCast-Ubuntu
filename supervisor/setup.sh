@@ -27,4 +27,7 @@ chown -R mysql:mysql /var/lib/mysql
 
 # Restart Supervisor services
 systemctl restart supervisor || :
+
+sleep 10
+
 supervisorctl restart all || :
