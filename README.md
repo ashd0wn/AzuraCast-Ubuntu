@@ -20,7 +20,7 @@ I intend to use AzuraCast with modifications (I only require the AutoDJ feature)
 Copy and paste the entire line into your CLI.
 
 ```
-mkdir /root/azuracast_installer && cd /root/azuracast_installer && git clone https://github.com/scysys/AzuraCast-Ubuntu.git . && git checkout 0.19.1 && chmod +x install.sh && ./install.sh -i
+mkdir /root/azuracast_installer && cd /root/azuracast_installer && git clone https://github.com/ashd0wn/AzuraCast-Ubuntu.git . && git checkout 0.19.1 && chmod +x install.sh && ./install.sh -i
 ```
 
 Post-installation, verify everything functions correctly. If you come across issues tied to this installer, please report them here and refrain from troubling the AzuraCast developers with problems specific to this repository.
