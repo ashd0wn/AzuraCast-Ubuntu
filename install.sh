@@ -3,7 +3,7 @@
 ### Description: Install AzuraCast
 ### OS: Ubuntu 22.04 LTS
 ### Run this script as root only
-### mkdir /root/azuracast_installer && cd /root/azuracast_installer && git clone https://github.com/scysys/AzuraCast-Ubuntu.git . && chmod +x install.sh && ./install.sh -i
+### mkdir /root/azuracast_installer && cd /root/azuracast_installer && git clone https://github.com/ashd0wn/AzuraCast-Ubuntu.git . && chmod +x install.sh && ./install.sh -i
 
 ##############################################################################
 # AzuraCast Installer

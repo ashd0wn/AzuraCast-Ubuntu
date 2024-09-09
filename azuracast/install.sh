@@ -15,19 +15,19 @@
 # Get required files
 if [ "$azuracast_git_version" = "stable" ]; then
     su azuracast <<EOF
-    git clone https://github.com/scysys/AzuraCast.git /var/azuracast/www
+    git clone https://github.com/ashd0wn/AzuraCast.git /var/azuracast/www
     git -C /var/azuracast/www checkout -f ${set_azuracast_version}-org
     composer --working-dir=/var/azuracast/www install --no-dev --no-ansi --no-interaction
 EOF
 elif [ "$azuracast_git_version" = "rolling" ]; then
     su azuracast <<EOF
-    git clone https://github.com/scysys/AzuraCast.git /var/azuracast/www
+    git clone https://github.com/ashd0wn/AzuraCast.git /var/azuracast/www
     git -C /var/azuracast/www checkout -f rolling
     composer --working-dir=/var/azuracast/www install --no-dev --no-ansi --no-interaction
 EOF
 else
     su azuracast <<EOF
-    git clone https://github.com/scysys/AzuraCast.git /var/azuracast/www
+    git clone https://github.com/ashd0wn/AzuraCast.git /var/azuracast/www
     git -C /var/azuracast/www checkout -f ${set_azuracast_version}-scy
     composer --working-dir=/var/azuracast/www install --no-dev --no-ansi --no-interaction
 EOF
