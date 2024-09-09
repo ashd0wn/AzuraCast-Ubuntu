@@ -101,11 +101,11 @@ mkdir -p $PHP_RUN_DIR
 touch $PHP_RUN_DIR/php${PHP_VERSION}-fpm.pid
 
 # Copy PHP configuration files
-curl -s -o $PHP_POOL_DIR/php.ini https://raw.githubusercontent.com/scysys/AzuraCast-Ubuntu/$newVersion/web/php/php.ini
-curl -s -o $PHP_POOL_DIR/www.conf https://raw.githubusercontent.com/scysys/AzuraCast-Ubuntu/$newVersion/web/php/www.conf
+curl -s -o $PHP_POOL_DIR/php.ini https://raw.githubusercontent.com/ashd0wn/AzuraCast-Ubuntu/$newVersion/web/php/php.ini
+curl -s -o $PHP_POOL_DIR/www.conf https://raw.githubusercontent.com/ashd0wn/AzuraCast-Ubuntu/$newVersion/web/php/www.conf
 
 # Copy Supervisors php-fpm.conf
-curl -s -o /etc/supervisor/conf.d/php-fpm.conf https://raw.githubusercontent.com/scysys/AzuraCast-Ubuntu/$newVersion/supervisor/conf.d/php-fpm.conf
+curl -s -o /etc/supervisor/conf.d/php-fpm.conf https://raw.githubusercontent.com/ashd0wn/AzuraCast-Ubuntu/$newVersion/supervisor/conf.d/php-fpm.conf
 
 # Disable and stop PHP FPM because of Supervisor
 systemctl disable php8.1-fpm
@@ -121,11 +121,11 @@ update-alternatives --set php /usr/bin/php${PHP_VERSION}
 apt_get_with_lock install -y --no-install-recommends redis-server
 
 # Get redis.conf
-curl -s -o /etc/redis/redis.conf https://raw.githubusercontent.com/scysys/AzuraCast-Ubuntu/$newVersion/redis/redis.conf
+curl -s -o /etc/redis/redis.conf https://raw.githubusercontent.com/ashd0wn/AzuraCast-Ubuntu/$newVersion/redis/redis.conf
 chown redis.redis /etc/redis/redis.conf
 
 # Get supervisor redis.conf
-curl -s -o /etc/supervisor/conf.d/redis.conf https://raw.githubusercontent.com/scysys/AzuraCast-Ubuntu/$newVersion/supervisor/conf.d/redis.conf
+curl -s -o /etc/supervisor/conf.d/redis.conf https://raw.githubusercontent.com/ashd0wn/AzuraCast-Ubuntu/$newVersion/supervisor/conf.d/redis.conf
 
 # Stop Redis
 systemctl disable redis-server || :

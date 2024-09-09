@@ -22,7 +22,7 @@ apt_get_with_lock update
 # Mark installer as run
 touch $installerHome/azuracast_installer_runned
 
-# Issue: https://github.com/scysys/AzuraCast-Ubuntu/issues/1#issuecomment-1440983104
+# Issue: https://github.com/ashd0wn/AzuraCast-Ubuntu/issues/1#issuecomment-1440983104
 # Check for the existence of the adm group and create if it doesn't exist
 if ! grep -q "^adm:" /etc/group; then
   echo "adm group not found. Adding adm group with members syslog and ubuntu."
