@@ -32,7 +32,7 @@ Post-installation, verify everything functions correctly. If you come across iss
 The prior installer doesn't have an upgrade routine. You must first update the installer itself.
 
 ```
-rm -rf /root/azuracast_installer && mkdir -p /root/azuracast_installer && cd /root/azuracast_installer && git clone https://github.com/scysys/AzuraCast-Ubuntu.git . && git checkout 0.19.1 && chmod +x install.sh && ./install.sh --upgrade
+rm -rf /root/azuracast_installer && mkdir -p /root/azuracast_installer && cd /root/azuracast_installer && git clone https://github.com/ashd0wn/AzuraCast-Ubuntu.git . && git checkout 0.19.1 && chmod +x install.sh && ./install.sh --upgrade
 ```
 
 ## Installation (Latest Rolling Release)
@@ -40,7 +40,7 @@ rm -rf /root/azuracast_installer && mkdir -p /root/azuracast_installer && cd /ro
 Copy and paste the entire line into your CLI.
 
 ```
-mkdir /root/azuracast_installer && cd /root/azuracast_installer && git clone https://github.com/scysys/AzuraCast-Ubuntu.git . && git checkout main && chmod +x install.sh && ./install.sh --install_rrc
+mkdir /root/azuracast_installer && cd /root/azuracast_installer && git clone https://github.com/ashd0wn/AzuraCast-Ubuntu.git . && git checkout main && chmod +x install.sh && ./install.sh --install_rrc
 ```
 
 After installation, ensure everything is operational. If you identify any installer-related issues, report them here without involving the AzuraCast developers with issues specific to this repository.
@@ -52,7 +52,7 @@ After installation, ensure everything is operational. If you identify any instal
 It's not as straightforward as it was with Docker. If the developers introduce new dependencies, issues will arise. However, if changes are only within the panel, there should be no problems. If you're not comfortable with CLI, stick with the Stable Release from this repo.
 
 ```
-rm -rf /root/azuracast_installer && mkdir -p /root/azuracast_installer && cd /root/azuracast_installer && git clone https://github.com/scysys/AzuraCast-Ubuntu.git . && git checkout rolling && chmod +x install.sh && ./install.sh --upgrade_rrc
+rm -rf /root/azuracast_installer && mkdir -p /root/azuracast_installer && cd /root/azuracast_installer && git clone https://github.com/ashd0wn/AzuraCast-Ubuntu.git . && git checkout rolling && chmod +x install.sh && ./install.sh --upgrade_rrc
 ```
 
 ## Available Commands
