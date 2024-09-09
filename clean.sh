@@ -68,7 +68,7 @@ cd /root/azuracast_installer/
 
 rm -rf /etc/cron.d/azuracast_user
 
-rm -rf /etc/php/8.2/
+rm -rf /etc/php/8.3/
 
 rm -rf /etc/apt/sources.list.d/mariadb.list*
 
