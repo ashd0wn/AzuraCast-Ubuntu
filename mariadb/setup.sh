@@ -29,7 +29,7 @@ if [ "$azuracast_git_version" = "stable" ] || [ "$azuracast_git_version" = "roll
     sed -i "s/changeToMySQLRootPW/$mysql_root_pass/g" mariadb/config/mysql_secure_installation.sql
 
     # Secure MySQL in same way like: mysql_secure_installation
-    /usr/bin/mariadb -sfu root <"mariadb/config/mysql_secure_installation.sql"
+    /usr/bin/mariadb -sfu root < mariadb/config/mysql_secure_installation.sql
 else
     echo "do nothing, will do it later in another way"
 fi
