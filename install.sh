@@ -264,7 +264,7 @@ function azuracast_install_rrc() {
     export DEBIAN_FRONTEND=noninteractive
 
     # Options
-    set_mariadb_version=10.9
+    set_mariadb_version=11.5
 
     # Include source
     source install_default.sh
