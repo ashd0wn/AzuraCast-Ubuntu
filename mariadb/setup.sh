@@ -19,9 +19,10 @@ fi
 apt_get_with_lock install -y mariadb-server mariadb-client
 
 # Create AzuraCast DB
+# Create AzuraCast DB
 /usr/bin/mariadb -e "create database $set_azuracast_database character set utf8mb4 collate utf8mb4_bin;"
-/usr/bin/mariadb -e "create user $set_azuracast_username@localhost identified by '$set_azuracast_password';"
-/usr/bin/mariadb -e "grant all privileges on $set_azuracast_database.* to $set_azuracast_username@localhost;"
+/usr/bin/mariadb -e "create user \`$set_azuracast_username\`@localhost identified by '$set_azuracast_password';"
+/usr/bin/mariadb -e "grant all privileges on $set_azuracast_database.* to \`$set_azuracast_username\`@localhost;"
 
 # Prepare MySQL-Root-Password
 if [ "$azuracast_git_version" = "stable" ] || [ "$azuracast_git_version" = "rolling" ]; then
